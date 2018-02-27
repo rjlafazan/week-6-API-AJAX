@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script type="text/javascript" src="assets/javascript/api.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -47,10 +48,17 @@
         </div>
         <div class="col-sm-8 text-center container-fluid">
     	    <h1>Dirpy!!!</h1>
-          <button id="cat-button">Get Images</button>
           <div id="buttons"></div>
+          <div id="buttonSpot"></div>
         </div>
         <div class="col-sm-2 text-center container-fluid">
+          <form role="form">
+              <div class="form-group">
+                <label for="button-input">Make Button:</label>
+                <input class="form-control" id="makeButtonInput" type="text">
+              </div>
+              <button class="btn btn-default" id="add-button" type="submit">Submit</button>
+          </form>
         </div>
       </div>
       <br>
@@ -100,8 +108,39 @@
     </div>
   </div>
 
+<!-- <div class="container-fluid bg-3 text-center">    
+    <div class="row" class="about-row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10 container-main">
+            <div id="myCarousel" class="carousel slide bg-inverse w-75 ml-auto mr-auto" data-ride="carousel">
+                <div id="carousel-images" class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/magiccat.gif">
+                  </div>
+
+
+
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+</div> -->
+
   <br>
-	<audio class="container-fluid text-center bg-dark" src="assets/audio/no_rest_for_the_wicked.mp3" autoplay loop controls></audio><br>
+	<audio class="container-fluid text-center bg-dark" src="assets/audio/" autoplay loop controls></audio><br>
 
 
 <footer class="container-fluid text-center bg-dark">
