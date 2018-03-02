@@ -37,7 +37,7 @@ footer {
       color: #9d9d9d;
       padding: 25px;
       border-top: 3px solid gold;
-      position: fixed;
+      /*position: fixed;*/
       bottom: 0;
       padding: 15px 0 5px 0;
     }
@@ -64,6 +64,23 @@ footer {
 .profile {
 	width: 50px;
 	height: 50px;
+	margin: 0 5px 0 5px;
+	align-items: center;
+	display: inline;
+}
+
+.gifs {
+	/*max-width: 200px;*/
+	width: 150px;
+	height: 150px;
+	margin: 0 5px 0 5px;
+	align-items: center;
+	display: inline;
+}
+
+.initial-gifs {
+	width: 450px;
+	height: 450px;
 	margin: 0 5px 0 5px;
 	align-items: center;
 	display: inline;

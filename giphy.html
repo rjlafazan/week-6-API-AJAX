@@ -4,16 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <script type="text/javascript" src="assets/javascript/api.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script type="text/javascript" src="assets/javascript/api.js"></script>
 
 	<title>Dirpy</title>
 </head>
-<body>
+<body class="bg-dark">
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <a class="navbar-brand" href="index.html">Ryan's Game Gallery</a>
+      <a class="navbar-brand" href="index.html">Dirping with Giphy</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,36 +23,24 @@
           <li class="nav-item">
             <a class="nav-link" href="https://rjlafazan.github.io/Bootstrap-Portfolio/index.html">Portfolio Site</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://rjlafazan.github.io/Hangman-Game/hangman.html">Hangman</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://rjlafazan.github.io/RockPaperScissorsLizardSpock/rpslS.html">Rock Paper Scissors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Boxing Game</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Trivia Game</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Dirpy</a>
+            <a class="nav-link" href="giphy.html">Dirpy</a>
           </li>
         </ul>
       </div>  
     </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron bg-dark">
 	  <div class="container">
       <div class='row'>
         <div class="col-sm-2 text-center container-fluid">
         </div>
-        <div class="col-sm-8 text-center container-fluid">
+        <div class="col-sm-8 text-center container-fluid text-light">
     	    <h1>Dirpy!!!</h1>
           <div id="buttons"></div>
           <div id="buttonSpot"></div>
         </div>
-        <div class="col-sm-2 text-center container-fluid">
+        <div class="col-sm-2 text-center container-fluid text-light">
           <form role="form">
               <div class="form-group">
                 <label for="button-input">Make Button:</label>
@@ -71,31 +60,50 @@
 	  </div>
 	</div>
 
-	<div class="container-fluid text-center bg-light connect-me">
+	<div class="container-fluid text-center bg-dark connect-me">
 	  <div class="row">
 	    <div class="col-sm-12">
 	      <div class="btn-group" role="group" aria-label="Basic example">
-	        <button type="button" class="btn bg-light"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
-	        <button type="button" class="btn bg-light"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
-	        <button type="button" class="btn bg-light"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
+	        <button type="button" class="btn bg-dark"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
+	        <button type="button" class="btn bg-dark"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
+	        <button type="button" class="btn bg-dark"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://github.com/rjlafazan"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="GitHub" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://www.linkedin.com/in/ryan-lafazan-351b90a/"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="LinkedIn" /></a></button>
+          <button type="button" class="btn bg-dark"><a href="https://stackoverflow.com/users/8755639/ryan-lafazan?tab=profile"><img src="assets/images/magiccat.gif" class="profile rounded-circle" alt="Stack Overflow" /></a></button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 
-  <div class="jumbotron">
-    <div class="container">
+  <div class="jumbotron text-center bg-dark">
+    <div class="container text-center">
       <div class='row'>
-        <div class="col-sm-2 text-center container-fluid">
-          <div id="resetButton"></div>
+        <!-- <div class="col-sm-2 text-center container-fluid">
+        </div> -->
+        <div align="center" class="col-sm-12 bg-dark text-light text-center">
+          <div class="row container-fluid text-center" id="images">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <img src="assets/images/magiccat.gif" class="rounded-circle"/>
+            </div>
+            <div class="col-sm-2"></div>
+            
+          </div>
         </div>
-        <div class="col-sm-8 text-center container-fluid">
-          <h5>Dirpy Stuff:</h5>
-          <div id="images"></div>
-        </div>
-        <div class="col-sm-2 text-center container-fluid">
-          <div id="resetButton"></div>
-        </div>
+        <!-- <div class="col-sm-2 text-center container-fluid">
+        </div> -->
       </div>
       <br>
       <div class="row">
@@ -140,7 +148,6 @@
 </div> -->
 
   <br>
-	<audio class="container-fluid text-center bg-dark" src="assets/audio/" autoplay loop controls></audio><br>
 
 
 <footer class="container-fluid text-center bg-dark">
@@ -151,7 +158,7 @@
   </div>
 </footer>
 
-	<script type="text/javascript" src="assets/javascript/api.js"></script>
+	<!-- <script type="text/javascript" src="assets/javascript/api.js"></script> -->
 
 
 
