@@ -14,11 +14,11 @@ $(document).ready(function() {
 
   searchItemArray = [
     "guitar",
+    "music",
     "drawing",
     "martial arts",
     "hiking",
     "camping",
-    "whiskey",
   ];
 
   function buttonMake() {
